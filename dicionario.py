@@ -4,7 +4,7 @@ clientes = [
     {"nome":"Ana","cel":"11 54554-6767","empresa":"Agel"},
     {"nome":"Pedro","cel":"11 67435-6969","empresa":"Itau"}
 ]
-
+ 
 empresa_pesquisada = (input ("Qual empresa voce procura? "))
 
 for cliente in clientes:
