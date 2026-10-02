@@ -28,7 +28,7 @@ clientes.append(novo_cliente)
 print (clientes)
 
 # Remover um cliente
-print ("---> Cadastrar um cliente pelo Nome <---")
+print ("---> Remover um cliente pelo Nome <---")
 nome_cliente = input ("Digite o nome do cliente para remover: ")
 
 for cliente in clientes:
