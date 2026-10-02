@@ -11,7 +11,7 @@ for cliente in clientes:
     if cliente["empresa"] == empresa_pesquisada:
         print (cliente)
 
-# Cadastrar novo cliente
+# Cadastrar novo cliente 
 
 print ("---> Cadastrar um novo cliente <---")
 nome = input ("Digite o nome do cliente: ")

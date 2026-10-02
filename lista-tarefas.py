@@ -108,7 +108,7 @@ def Remover_tarefa():
             tarefas.remove (tarefa)
             break    
 
-while True:
+while True: 
     print (" ---> Lista de tarefas <--- ")
     print ("1 - Mostrar tarefas")
     print ("2 - Mostrar tarefas concluidas")
