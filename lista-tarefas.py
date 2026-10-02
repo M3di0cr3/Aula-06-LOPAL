@@ -34,13 +34,30 @@ def Tarefas_não_concluidas():
             print (tarefa)
 def Tarefas_por_prioridade():
     for tarefa in tarefas:
-        if tarefa["prioridade"] == "alta":
+        if tarefa["prioridade"] == "alta" and tarefa["concluida?"] == "sim":
+            tarefa["concluida?"] = "[x]"
             print (tarefa)
     for tarefa in tarefas:
-        if tarefa["prioridade"] == "media":
+        if tarefa["prioridade"] == "alta" and tarefa["concluida?"] == "nao":
+            tarefa["concluida?"] = "[ ]"
+            print (tarefa)
+
+    for tarefa in tarefas:
+        if tarefa["prioridade"] == "media" and tarefa["concluida?"] == "sim":
+            tarefa["concluida?"] = "[x]"
+            print (tarefa)  
+    for tarefa in tarefas:
+        if tarefa["prioridade"] == "media" and tarefa["concluida?"] == "nao":
+            tarefa["concluida?"] = "[ ]"
+            print (tarefa)
+
+    for tarefa in tarefas:
+        if tarefa["prioridade"] == "baixa" and tarefa["concluida?"] == "sim":
+            tarefa["concluida?"] = "[x]"
             print (tarefa)
     for tarefa in tarefas:
-        if tarefa["prioridade"] == "baixa":
+        if tarefa["prioridade"] == "baixa" and tarefa["concluida?"] == "nao":
+            tarefa["concluida?"] = "[ ]"
             print (tarefa)
 def Cadastrar_tarefa():
     while True:
